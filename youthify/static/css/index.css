@@ -1,0 +1,99 @@
+/* #d0dbee - blue 
+#ead2e5 - pink 
+#bec4e2 - purple 
+body text - glacial indifference 
+heading - tan headline */
+
+@font-face {
+  font-family: Destra;
+  src: url(../fonts/Destra\ Regular.ttf);
+}
+
+@font-face {
+  font-family: GIndiffernceRegular;
+  src: url(../fonts/GlacialIndifference-Regular.otf);
+}
+
+@font-face {
+  font-family: GIndiffernceItalic;
+  src: url(../fonts/GlacialIndifference-Italic.otf);
+}
+
+@font-face {
+  font-family: GIndiffernceBold;
+  src: url(../fonts/GlacialIndifference-Bold.otf);
+}
+
+body {
+  background-color: #D0DBED;
+}
+
+/* .navBar {
+  display: inline-flex;
+}
+ */
+.homebtn {
+  float: left;
+  width: 50%;
+}
+
+.homebtn img {
+  max-width: 30%;
+  margin: 5% 0 0 5%;
+}
+
+.navbtn {
+  float: right;
+  width: 50%;
+}
+
+.navbtn button {
+  max-width: 40%;
+  float: right;
+  margin: 5% 0 0 5%;
+}
+
+.sideNavButton {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  width: 70%;
+}
+
+.sideNavButton img {
+  max-width: 80%;
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: pink;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  justify-content: end;
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 4em;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 5em;
+  margin-left: 50px;
+}

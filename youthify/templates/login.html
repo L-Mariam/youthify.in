@@ -1,0 +1,38 @@
+<form method="post" action="/admin/login/submit">
+    <div>
+        <div>
+          <label for="id">
+            Admin ID
+          </label>
+          <input id="id" type="text" placeholder="Admin ID" name="id">
+        </div>
+        <div>
+          <label for="password">
+            Password
+          </label>
+          <input id="pwd" type="password" placeholder="******************" name="password">
+        <script>
+            function showPwd() {
+                x = document.getElementById('pwd')
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+            function labelClick(){
+              x = document.getElementById('checkboxpwd');
+              checked = x.checked;
+              x.checked = !x.checked;
+            }
+        </script>
+        </div>
+        <div>
+            <input type="checkbox" onclick="showPwd()" name="showpwd" id="checkboxpwd">
+            <label for="showpwd" onclick="showPwd();labelClick();">Show Password</label>
+        </div>
+        <div>
+          <input type="submit" id="submit" value="Sign In">
+        </div>
+    </div>
+</form>
