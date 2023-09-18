@@ -70,4 +70,4 @@ def admin_dashboard():
 def pageNotFound(e):
     return render_template('404.html')
 
-app.run(debug=True)
+app.run(debug=False, host='0.0.0.0')
