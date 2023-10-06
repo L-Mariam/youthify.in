@@ -1,3 +1,24 @@
+
+@font-face {
+	font-family: Destra;
+	src: url(../fonts/Destra\ Regular.ttf);
+  }
+  
+  @font-face {
+	font-family: GIndiffernceRegular;
+	src: url(../fonts/GlacialIndifference-Regular.otf);
+  }
+  
+  @font-face {
+	font-family: GIndiffernceItalic;
+	src: url(../fonts/GlacialIndifference-Italic.otf);
+  }
+  
+  @font-face {
+	font-family: GIndiffernceBold;
+	src: url(../fonts/GlacialIndifference-Bold.otf);
+  }
+
 body,
 html {
 	height: 100vh;

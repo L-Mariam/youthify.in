@@ -1,135 +1,286 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %} About {% endblock %}
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="shortcut icon" href="../static/imgs/favicon.png">
+   <!-- CSS for about page -->
+   <link rel="stylesheet" href="../static/css/about.css">
+   <script src="../static/js/about.js"></script>
 
-{% block body %}
-<section class="intro">
-    <div class="content">
-       <h1 class="heading"> - about us - </h1>
-       <p> A youth-led orgainzation dedicatd to eradictaing the stigma associated with mental health </p>
-       <h1>Our Mission</h1>
-       <p> We believe in the value of self-love and acceptance  and advocate for it. We hope to us our platform to procide a safe space for others to grow while also raising awareness about important issues that deserve to be brought to light.
-       </p>
-       <br>
-       <br>
-    </div>
-    <div class="aintro">
-       <div class="row">
-          <div class="column">
-             <a href="https://www.instagram.com/p/Cs_ScIHxP0m/">
-                <img src="{{ url_for('static', filename='imgs/InstaPost1.jpg') }}"  alt="Instagram post1"/> 
-          </div>
-          <div class="column">
-             <a href="https://www.instagram.com/p/CtT8PXAxWWA/">
-                <img src="{{ url_for('static', filename='imgs/InstaPost2.jpg') }}"  alt="Instagram post2"/> 
-          </div>
-          <div class="column">
-             <a href="https://www.instagram.com/p/CttsPeyREvJ/">
-                <img src="{{ url_for('static', filename='imgs/InstaPost3.jpg') }}"  alt="Instagram post3"/> 
-          </div>
-          <div class="column">
-             <a href="https://www.instagram.com/p/Ct_uEiMR4qe/" title="Fun fact: ">
-                <img src="{{ url_for('static', filename='imgs/InstaPost4.jpg') }}"  alt="Instagram post4"/> 
-          </div>
-       </div>
-    </div>
- </section>
- <section class="content">
-    <h1>Meet the Executive Board </h1>
-    <br>
-    <br>
-    <div class="contents">
-       <a href="" title="Fun fact: ">
-          <article class="card">
-             <div class="card-content">
-                <div class="profile-image">
-                   <img src="https://media.gettyimages.com/id/184276818/photo/red-apple.jpg?s=612x612&w=gi&k=20&c=g4QQDlk82yZZVhp2roJRzxY0XjwdG00VlovVClHtNyI=" alt=""/> 
-                </div>
-                <h1  class="cardText">  Vaani Abbott </h1>
-                <h1  class="cardText"> Founder and President </h1>
-                <p>
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-             </div>
-          </article>
-       </a>
-       <a href="" title="Fun fact: ">
-          <article class="card">
-             <div class="card-content">
-                <div class="profile-image">
-                   <img src="https://media.gettyimages.com/id/184276818/photo/red-apple.jpg?s=612x612&w=gi&k=20&c=g4QQDlk82yZZVhp2roJRzxY0XjwdG00VlovVClHtNyI=" alt=""/> 
-                </div>
-                <h1  class="cardText">  Vaani Abbott </h1>
-                <h1  class="cardText"> Founder and President </h1>
-                <p>
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-             </div>
-          </article>
-       </a>
-       <a href="" title="Fun fact: ">
-          <article class="card">
-             <div class="card-content">
-                <div class="profile-image">
-                   <img src="https://media.gettyimages.com/id/184276818/photo/red-apple.jpg?s=612x612&w=gi&k=20&c=g4QQDlk82yZZVhp2roJRzxY0XjwdG00VlovVClHtNyI=" alt=""/> 
-                </div>
-                <h1  class="cardText">  Vaani Abbott </h1>
-                <h1  class="cardText"> Founder and President </h1>
-             </div>
-          </article>
-       </a>
-       <a href="" title="Fun fact: ">
-          <article class="card">
-             <div class="card-content">
-                <div class="profile-image">
-                   <img src="https://media.gettyimages.com/id/184276818/photo/red-apple.jpg?s=612x612&w=gi&k=20&c=g4QQDlk82yZZVhp2roJRzxY0XjwdG00VlovVClHtNyI=" alt=""/> 
-                </div>
-                <h1 class="cardText">  Vaani Abbott </h1>
-                <h1  class="cardText"> Founder and President </h1>
-             </div>
-          </article>
-       </a>
-    </div>
-    <br> 
-    <br>
-    <button> Meet the Team </button>
- </section>
- <section>
-    <div class="slideshow-container">
-       <div class="mySlides fade">
-          <div class="container">
-             <div class="numbertext">1 / 2</div>
-             <div class="text">
-                <h1> Join our events</h1>
-                <p> In order to increase awareness on the recent mental health issues, our goal is to hold a webinar every week that delves into the most important mental health crisis relevant at time. Register in the link below so you stay update in the industry! </p>
-                <button class="register"> Register </button>
-             </div>
-             <div class="imge">
-                <img src="{{ url_for('static', filename='imgs/Event1.jpg') }}"  alt="Event image1"/> 
-             </div>
-          </div>
-       </div>
-       <div class="mySlides fade">
-          <div class="container">
-             <div class="numbertext">1 / 2</div>
-             <div class="text">
-                <h1> Join our events</h1>
-                <button> Register </button>
-             </div>
-             <div class="imge">
-                <img src="{{ url_for('static', filename='imgs/Event2.jpg') }}"  alt="Event image2"/> 
-             </div>
-          </div>
-       </div>
-       <a class="prev" onclick="plusSlides(-1)">❮</a>
-       <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-    <br>
-    <div style="text-align:center">
-       <span class="dot" onclick="currentSlide(1)"></span> 
-       <span class="dot" onclick="currentSlide(2)"></span> 
-    </div>
- </section>
- {% endblock %}
+   <style>
+      body {
+	background-color: #d0dcec;
+	font-family: 'GIndiffernceRegular', 'Montserrat', sans-serif;
+}
+.header{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 3%;
+}
+
+/* .navBar {
+  display: inline-flex;
+}
+ */
+.homebtn {
+  float: left;
+}
+
+.homebtn img {
+  margin: 40% 0 0 40%;
+}
+
+.navbtn {
+  float: right;
+  width: 15%;
+  top: 0;
+}
+
+.navbtn button {
+  max-width: 40%;
+  float: right;
+  margin: 5% 0 0 5%;
+}
+
+.sideNavButton {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  width: 70%;
+}
+
+.sideNavButton img {
+  max-width: 80%;
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: pink;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  justify-content: end;
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  max-width: 20px;
+  font-family: 'GIndiffernceRegular', 'Montserrat', sans-serif;
+
+}
+
+.sideNav a:hover {
+  color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2em;
+  margin-left: 50px;
+}
+   </style>
+</head>
+
+<body>
+   <div class="header">
+      <div class="navbar">
+
+         <div class="homebtn">
+            <a href="/">
+               <img style="width: 70px;" src="../static/imgs/youthify.png">
+            </a>
+         </div>
+
+         <div class="navbtn">
+            <button onclick="openNav()" class="sideNavButton">
+               <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Menu / Hamburger_MD">
+                     <path id="Vector" d="M5 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+               </svg>
+            </button>
+         </div>
+
+      </div>
+      <div class="sideNav" id="sideNav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="/">Home</a>
+         <a href="/about">About</a>
+         <a href="/blogs">Blogs</a>
+         <a href="/events">Events</a>
+         <a href="/team">Team</a>
+      </div>
+      <script src="../static/js/navbar.js"></script>
+
+   </div>
+
+
+   <section class="intro">
+      <div class="content">
+         <h1 class="heading"> - about us - </h1>
+         <p> A youth-led orgainzation dedicatd to eradictaing the stigma associated with mental health </p>
+         <h1>Our Mission</h1>
+         <p> We believe in the value of self-love and acceptance and advocate for it. We hope to us our platform to
+            procide a safe space for others to grow while also raising awareness about important issues that deserve to
+            be brought to light.
+         </p>
+         <br>
+         <br>
+      </div>
+      <div class="aintro">
+         <div class="row">
+            <div class="column">
+               <a href="https://www.instagram.com/p/Cs_ScIHxP0m/">
+                  <img src="../static/imgs/InstaPost1.jpg" alt="Instagram post1" />
+            </div>
+            <div class="column">
+               <a href="https://www.instagram.com/p/CtT8PXAxWWA/">
+                  <img src="../static/imgs/InstaPost2.jpg" alt="Instagram post2" />
+            </div>
+            <div class="column">
+               <a href="https://www.instagram.com/p/CttsPeyREvJ/">
+                  <img src="../static/imgs/InstaPost3.jpg" alt="Instagram post3" />
+            </div>
+            <div class="column">
+               <a href="https://www.instagram.com/p/Ct_uEiMR4qe/" title="Fun fact: ">
+                  <img src="../static/imgs/InstaPost4.jpg" alt="Instagram post4" />
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="content">
+      <h1>Meet the Executive Board </h1>
+      <br>
+      <br>
+      <div class="contents">
+         <a href="" title="Fun fact: ">
+            <article class="card">
+               <div class="card-content">
+                  <div class="profile-image">
+                     <img
+                        src="https://media.gettyimages.com/id/184276818/photo/red-apple.jpg?s=612x612&w=gi&k=20&c=g4QQDlk82yZZVhp2roJRzxY0XjwdG00VlovVClHtNyI="
+                        alt="" />
+                  </div>
+                  <h1 class="cardText"> Vaani Abbott </h1>
+                  <h1 class="cardText"> Founder and President </h1>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat.
+                  </p>
+               </div>
+            </article>
+         </a>
+         <a href="" title="Fun fact: ">
+            <article class="card">
+               <div class="card-content">
+                  <div class="profile-image">
+                     <img
+                        src="https://media.gettyimages.com/id/184276818/photo/red-apple.jpg?s=612x612&w=gi&k=20&c=g4QQDlk82yZZVhp2roJRzxY0XjwdG00VlovVClHtNyI="
+                        alt="" />
+                  </div>
+                  <h1 class="cardText"> Vaani Abbott </h1>
+                  <h1 class="cardText"> Founder and President </h1>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat.
+                  </p>
+               </div>
+            </article>
+         </a>
+         <a href="" title="Fun fact: ">
+            <article class="card">
+               <div class="card-content">
+                  <div class="profile-image">
+                     <img
+                        src="https://media.gettyimages.com/id/184276818/photo/red-apple.jpg?s=612x612&w=gi&k=20&c=g4QQDlk82yZZVhp2roJRzxY0XjwdG00VlovVClHtNyI="
+                        alt="" />
+                  </div>
+                  <h1 class="cardText"> Vaani Abbott </h1>
+                  <h1 class="cardText"> Founder and President </h1>
+               </div>
+            </article>
+         </a>
+         <a href="" title="Fun fact: ">
+            <article class="card">
+               <div class="card-content">
+                  <div class="profile-image">
+                     <img
+                        src="https://media.gettyimages.com/id/184276818/photo/red-apple.jpg?s=612x612&w=gi&k=20&c=g4QQDlk82yZZVhp2roJRzxY0XjwdG00VlovVClHtNyI="
+                        alt="" />
+                  </div>
+                  <h1 class="cardText"> Vaani Abbott </h1>
+                  <h1 class="cardText"> Founder and President </h1>
+               </div>
+            </article>
+         </a>
+      </div>
+      <br>
+      <br>
+      <button> Meet the Team </button>
+   </section>
+   <section>
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+            <div class="container">
+               <div class="numbertext">1 / 2</div>
+               <div class="text">
+                  <h1> Join our events</h1>
+                  <p> In order to increase awareness on the recent mental health issues, our goal is to hold a webinar
+                     every week that delves into the most important mental health crisis relevant at time. Register in
+                     the link below so you stay update in the industry! </p>
+                  <button class="register"> Register </button>
+               </div>
+               <div class="imge">
+                  <img src="../static/imgs/Event1.jpg" alt="Event image1" />
+               </div>
+            </div>
+         </div>
+
+         <div class="mySlides fade">
+            <div class="container">
+               <div class="numbertext">2 / 2</div>
+               <div class="text">
+                  <h1> Join our events</h1>
+                  <button> Register </button>
+               </div>
+               <div class="imge">
+                  <img src="../static/imgs/Event2.jpg" alt="Event image2" />
+               </div>
+            </div>
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+   </section>
+</body>
+
+</html>

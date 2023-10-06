@@ -24,8 +24,9 @@ heading - tan headline */
   src: url(../fonts/GlacialIndifference-Bold.otf);
 }
 
-body {
-  background-color: #D0DBED;
+.header{
+  margin-top: 0;
+  margin-bottom: 20%;
 }
 
 /* .navBar {
